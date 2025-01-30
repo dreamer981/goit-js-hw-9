@@ -30,63 +30,67 @@ body {
     transform: scale(1.1);
   }
   
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color:#646cff;
+    cursor: pointer;
+  
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  
   .feedback-form {
-    background: #ffffff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
     width: 100%;
     max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 0 auto;
+    margin: auto; /* Formun genişliği */
   }
   
-  .feedback-form label {
-    font-weight: bold;
-    margin-bottom: 5px;
+  label {
+    display: block;
+    margin-bottom: 10px;
     font-size: 14px;
-    color: #333333;
+    color: #333;
   }
   
-  .feedback-form input,
-  .feedback-form textarea {
+  input[type="email"],
+  textarea {
     width: 100%;
-    padding: 12px 0;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 5px;
     font-size: 14px;
-    outline: none;
-    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Kenar dolgularını dahil et */
   }
   
-  .feedback-form input:focus,
-  .feedback-form textarea:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  textarea {
+    resize: none; /* Kullanıcıya yeniden boyutlandırmayı kapatma */
   }
-  
-  .feedback-form textarea {
-    resize: none;
-  }
-  
-  .feedback-form button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+  button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007bff; /* Mavi buton */
+    color: black;
     font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
-  
-  .feedback-form button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-  }
-  
   .feedback-form button:active {
     transform: translateY(0);
   }
