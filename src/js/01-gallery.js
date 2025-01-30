@@ -1,7 +1,7 @@
 import "./init.js";
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
-import { images } from "../data/images.js";
+import { images } from "../../goit-js-hw-9/data/images.js";
 
 const galleryContainer = document.querySelector(".gallery");
 
