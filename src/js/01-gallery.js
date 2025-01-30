@@ -1,5 +1,5 @@
 import "./init.js";
-import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
+import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 import { images } from "../../goit-js-hw-9/data/images.js";
 
